@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'ELEGANT TYPEWRITER';
+    src: url('ELEGANT TYPEWRITER Regular.ttf');
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: black;
+    text-align: center;
+    font-family: 'ELEGANT TYPEWRITER', 'Arial Narrow', Arial, sans-serif;
+}
+
+#body_main_page {
+    background-color: black;
+    padding-top: 10px;
+}
+
+
+/* header */
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 120px;
+}
+
+h1 {
+    color: silver;
+    margin: 20px auto;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    border: 2px solid silver;
+    border-radius: 12%;
+    background-color: silver;
+    padding: 6px 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition-property: background-color;
+    transition-duration: 500ms;
+}
+
+.navbar a:hover {
+    color: silver;
+    background-color: black;
+
+}
+
+/* index/art */
+.images {
+    max-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 5px;
+    border: 2px solid black;
+    border-radius: 12%;
+    transition-property: border;
+    transition-duration: 500ms;
+}
+
+.images:hover {
+    border: 2px solid silver;
+}
+
+@media only screen and (max-width: 570px) {
+    .images {
+        max-width: 75%;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .images {
+        max-width: 90%;
+    }
+}
+
+h3 {
+    color: silver;
+    text-align: center;
+}
+
+
+/* about_me */
+
+/* en dessous de 680px (tablette portrait/smartphone) */
+
+.lake {
+    max-width: 97%;
+}
+
+.whoami {
+    color: black;
+    background-color: silver;
+    display: block;
+    max-width: 97%;
+    padding: 17px 30px;
+    text-align: justify;
+    border: 2px solid silver;
+    border-radius: 10%;
+}
+
+
+/* au dessus de 680px (pc/tablette) */
+@media only screen and (min-width:710px) {
+    .lake {
+        max-height: 663px;
+        position: relative;
+    }
+
+    .whoami {
+        color: black;
+        background-color: silver;
+        display: block;
+        position: absolute;
+        top: 14%;
+        left: 3%;
+        max-width: 40%;
+        padding: 17px 30px;
+        text-align: justify;
+        opacity: 0.7;
+    }
+}
+
+
+/* words */
+.words {
+    color: silver;
+    text-align: center;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .words {
+        max-width: 90%;
+    }
+}
+
+
+/* footer */
+footer {
+    height: 55px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+.logo {
+    width: auto;
+    height: 30px;
+    margin: 10px 30px;
+}
