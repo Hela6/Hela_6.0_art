@@ -125,6 +125,33 @@ h3 {
     }
 }
 
+/* au dessus de 1440px (pc/tablette) */
+@media only screen and (min-width: 1440px) {
+    .lake {
+        max-width: 45%;
+        border: 2px solid silver;
+        border-radius: 2%;
+        margin: auto;
+    }
+
+    .whoami {
+        color: silver;
+        background-color: black;
+        max-width: 46%;
+        padding: 14px 15px;
+        text-align: justify;
+        border: 2px solid black;
+        border-radius: 2%;
+        margin: 23%;
+        margin-left: 23%;
+        display: block;
+        transition: transform 500ms;
+    }
+
+    .whoami:hover {
+        transform: scale(1.1);
+    }
+}
 
 /* words */
 .words {
