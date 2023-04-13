@@ -148,9 +148,6 @@ h3 {
         transition: transform 500ms;
     }
 
-    .whoami:hover {
-        transform: scale(1.1);
-    }
 }
 
 /* words */
